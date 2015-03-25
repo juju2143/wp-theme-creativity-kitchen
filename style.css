@@ -1,0 +1,164 @@
+/*
+Theme Name: Creativity Kitchen
+Theme URI: http://creativity-kitchen.com
+Description: Creativity Kitchen WordPress theme
+Version: 0.1
+Author: juju2143
+Author URI: http://juju2143.ca
+*/
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background: #000000;
+	color: #FFFFFF;
+	font-family: Arial, sans-serif;
+}
+nav
+{
+	font-family: "Segoe UI", Arial, sans-serif;
+}
+nav ul
+{
+	float: left;
+	margin: 0.5em;
+}
+nav ul li
+{
+	display: inline;
+	margin: 1.5em;
+}
+nav form
+{
+	display: inline;
+	float: right;
+}
+header
+{
+	background-image: url("images/overlay.png"), url("images/banner.jpg");
+	background-size: 8px, 100%;
+	background-position: center;
+	clear: both;
+	padding: 1em;
+}
+header #synopsis
+{
+	background-color: rgba(0,0,0,0.5);
+	width: 60%;
+	padding: 0.25em;
+}
+header #logo
+{
+	width: 60%;
+}
+main
+{
+	float: left;
+	width: 70%;
+	padding-left: 3em;
+	margin-top: 2em;
+}
+main article
+{
+	margin-bottom: 2em;
+	border-right: 2px solid #6633ff;
+}
+main article .title
+{
+	font-size: 4em;
+	font-weight: normal;
+}
+main article .title a
+{
+	color: #ffffff;
+	border-bottom: 0;
+}
+main article .title time
+{
+	font-size: 0.3em;
+}
+main article .title time:before, main article .comment-num:before, footer ul li:before
+{
+	content: ' // ';
+	color: #6633ff;
+}
+main article .subtitle
+{
+	border-bottom: 2px solid #6633ff;
+}
+a
+{
+	text-decoration: none;
+	color: #6633ff;
+}
+a:hover
+{
+	text-decoration: underline;
+}
+.title a:hover
+{
+	text-decoration: none;
+}
+main article .more-link, main .next-post-links a
+{
+	background-color: #6633ff;
+	padding: 0.5em 2em;
+	color: #ffffff;
+	text-decoration: none;
+	border-bottom: 0;
+}
+main article .more-link:hover, main .next-post-links a:hover
+{
+	background-color: #505050;
+}
+main article .more-link:active, main .next-post-links a:active
+{
+	background-color: #404040;
+}
+p
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+main .next-post-links a
+{
+	margin-right: 1em;
+}
+aside
+{
+	float: right;
+	margin-top: 2em;
+	padding-right: 1em;
+}
+aside div
+{
+	margin-bottom: 1em;
+}
+aside div h2
+{
+	font-weight: normal;
+}
+aside div ul li
+{
+	list-style-type: none;
+}
+footer
+{
+	clear: both;
+	text-align: center;
+}
+footer ul li
+{
+	display: inline;
+}
+nav ul li a, footer ul li a
+{
+	color: #ffffff;
+}
+footer ul li:first-child:before
+{
+	content: '';
+}
