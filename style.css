@@ -59,6 +59,7 @@ header #sandwich
 	display: none;
 	background-color: rgba(0,0,0,0.5);
 	padding: 0.5em;
+	cursor: pointer;
 }
 main
 {
@@ -107,6 +108,11 @@ a
 a:hover
 {
 	text-decoration: underline;
+	color: #505050;
+}
+a:active
+{
+	color: #404040;
 }
 .title a:hover
 {
@@ -123,10 +129,12 @@ main article .more-link, main .next-post-links a
 main article .more-link:hover, main .next-post-links a:hover
 {
 	background-color: #505050;
+	color: #ffffff;
 }
 main article .more-link:active, main .next-post-links a:active
 {
 	background-color: #404040;
+	color: #ffffff;
 }
 p
 {
@@ -172,6 +180,10 @@ footer ul li
 nav ul li a, footer ul li a
 {
 	color: #ffffff;
+}
+nav ul li a:hover, footer ul li a:hover
+{
+	color: #6633ff;
 }
 footer ul li:first-child:before
 {

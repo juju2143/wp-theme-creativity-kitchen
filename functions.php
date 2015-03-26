@@ -4,6 +4,7 @@ function ck_custom_nav() {
 		'menu_head' => 'Header Menu',
 		'menu_foot' => 'Footer Menu'
 	));
+	wp_enqueue_script('jquery');
 }
 add_action('init', 'ck_custom_nav');
 
