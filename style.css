@@ -54,14 +54,24 @@ header #logo
 {
 	width: 60%;
 }
+header #sandwich
+{
+	display: none;
+	background-color: rgba(0,0,0,0.5);
+	padding: 0.5em;
+}
 main
 {
 	float: left;
-	width: 70%;
-	padding-left: 3em;
+	width: 75%;
 	margin-top: 2em;
 }
-main article
+main>*
+{
+	padding-left: 3em;
+	padding-right: 1em;
+}
+main article, .comment
 {
 	margin-bottom: 2em;
 	border-right: 2px solid #6633ff;
@@ -129,15 +139,20 @@ main .next-post-links a
 }
 aside
 {
-	float: right;
+	float: left;
+	width: 25%;
 	margin-top: 2em;
+}
+aside>*
+{
+	padding-left: 1em;
 	padding-right: 1em;
 }
 aside div
 {
 	margin-bottom: 1em;
 }
-aside div h2
+h1, h2, h3, h4, h5, h6
 {
 	font-weight: normal;
 }
@@ -161,4 +176,70 @@ nav ul li a, footer ul li a
 footer ul li:first-child:before
 {
 	content: '';
+}
+input, textarea
+{
+	background: inherit;
+	border: 2px solid #6633ff;
+	color: #ffffff;
+}
+input[type=button], input[type=submit], button
+{
+	background-color: #6633ff;
+}
+::-webkit-scrollbar
+{
+	background: transparent;
+	width: 8px;
+	height: 8px;
+}
+::-webkit-scrollbar-thumb
+{
+	background: #6633ff;
+	border-radius: 4px;
+}
+@media screen and (max-width: 768px)
+{
+	nav
+	{
+		display: none;
+	}
+	nav ul li
+	{
+		display: block;
+	}
+	header
+	{
+		background-size: auto, 150%;
+	}
+	header #sandwich
+	{
+		display: inline-block;
+	}
+	header #synopsis, header #logo
+	{
+		width: 100%;
+	}
+	main, aside
+	{
+		clear: both;
+		width: 100%;
+	}
+	main>*, aside>*
+	{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	main article, .comment
+	{
+		border: 0;
+	}
+	aside
+	{
+		text-align: center;
+	}
+	#commentform textarea
+	{
+		width: 99%;
+	}
 }
